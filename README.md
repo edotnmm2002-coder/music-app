@@ -711,7 +711,7 @@ npm run dev
 
 ## Notes
 
-* Uploads are stored in `backend/uploads` by default. For production, configure S3 (instructions in README).
+* Uploads are stored in `cumputer files ` by default. For production, configure S3 (instructions in README).
 * Stripe integration uses test keys in `.env`.
 
 ```
@@ -946,7 +946,7 @@ async function createCheckoutSession(customerEmail, successUrl, cancelUrl) {
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     mode: 'subscription',
-    line_items: [{ price: 'price_replace_with_your_price_id', quantity: 1 }],
+    line_items: [{ price: '40.99', quantity: 1 }],
     customer_email: customerEmail,
     success_url: successUrl,
     cancel_url: cancelUrl,
@@ -1104,8 +1104,8 @@ import React, {useState} from 'react';
 import API from '../api';
 
 export default function Login(){
-  const [email,setEmail]=useState('');
-  const [pw,setPw]=useState('');
+  const [email,setEmail]=useState('yes');
+  const [pw,setPw]=useState('yes');
   async function submit(e){
     e.preventDefault();
     const res = await API.post('/auth/login', { email, password: pw });
