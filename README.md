@@ -621,24 +621,15 @@ jobs:
         run: |
           cd frontend
           npm run build
-```
 
----
 
-## Next steps & notes
 
-1. **Database:** This starter uses SQLite for simplicity. For production use Postgres or MySQL.
-2. **Storage:** Switch uploads to S3 (or similar) for scalability.
-3. **Payments:** Create Stripe Price IDs and replace placeholders. Securely store secrets.
-4. **Security:** Use HTTPS in production, validate uploaded files and sizes, add rate limiting.
-5. **Testing:** Add unit and integration tests.
 
----
 
-If you want, I can now:
 
-* Generate each file as separate commits and provide exact `git` commands to run locally.
-* Swap the backend to Flask/Django or change the frontend stack.
-* Add S3 upload example and Stripe webhook handling.
 
-Tell me which of those you'd like me to do next.
+
+
+
+
+
